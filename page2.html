@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>NovelNook</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Solway&display=swap" rel="stylesheet">
+	</head>
+    
+	<body>
+		<!-- navigation bar -->
+		
+		<div class="nav">
+		<nav class="nav1">
+			<ul>
+				<li class="navButton">SELL IN NOVELNOOK</li>
+                <li class="navButton">SUPPORT</li>
+                <li class="navButton">LOGIN</li>
+                <li class="navButton">SIGNUP</li>
+			</ul>
+			
+		</nav>
+		<nav class="nav2">
+			<img src="logo.png" class="logo">
+			<img src="logo2.png" class="logo2">
+		</nav>
+			
+		<div class="product-container">
+			<div>	
+				<img class="product-image" src="Age.webp" alt="">
+				<div class="product-name">Age of Vice</div>
+			</div>
+			<div class="product-details">
+				<div class="product-price">₱1,000</div>
+				<div class="description-container">
+					<p>"In the heart of a city where power, greed, and ambition converge, 'Age of Vice' unfolds a tale of clandestine dealings, ruthless betrayals, and forbidden desires. Follow the enigmatic characters as they navigate the treacherous waters of a world ruled by temptation, where everyone has a vice, and no one is truly innocent. In this gripping narrative, secrets are the currency, and redemption is a luxury few can afford. 'Age of Vice' is a mesmerizing journey into a society where moral boundaries blur, and the consequences of one's choices are as unpredictable as the darkness that lurks within us all."</p>
+				</div>
+				<div>
+					<button class="product-options">BUY NOW</button>
+					<button class="product-options">ADD TO CART</button>
+					<button class="product-options">FIND OTHERS</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<style>
+		<!-- Navigation -->
+		.nav{
+			overflow: hidden;
+			position: relative;
+			top: 0;
+			left: 0;}
+		.nav1{
+            z-index: 2;
+			width: 100%;
+            position: fixed;
+            background-color: #386150;
+			top: 0%;
+			left: 0%;}
+		.navButton{
+            padding-right: 20px;
+            font-family: Times New Roman;
+            color: #fff;
+            list-style-type: none;
+            float: right;
+            font-size: 16px;}
+		.nav2{
+			z-index: 1;
+			width: 100%;
+			height: 106px;
+			left: 0%;
+			top: 3%;
+			position: fixed;
+			background-color: #cffdbc;}
+		.logo{
+			float: left;}
+		.logo2{
+			float: right;
+			height: 100px;}
+		.product-container{
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 200px;}
+		.product-image{
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+			max-width: 100%;
+            height: auto;}
+		.product-details{
+            flex: 1;
+            margin-left: 20px;}
+		.product-name{
+            font-family: Oswald;
+			font-size: 50px;
+			font-weight: bold;
+            margin: 10px 0;
+			text-align: center;}
+		.product-price{
+            font-family: Oswald;
+			font-weight: bold;
+			font-size: 30px;
+			color: #8a6851;}
+		.description-container{
+			border: 3px solid #000;
+            padding: 10px;
+            margin: 10px 0;}
+		.product-options{
+            font-family: Solway;
+			margin-left: 20px; 
+			background: #8a6851; 
+			font-weight: bold;
+			font-size: 24px;
+			border-radius: 15px;
+			font-weight: bold;
+			display: flex;
+			flex-direction: row;
+			float: right;}
+		.product-options:hover{
+			background-color: #604839;}
+		.p{
+			font-family: Oswald;}
+</html>

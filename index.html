@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>NovelNook</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	</head>
+    
+	<body>
+		<!-- navigation bar -->
+		
+		<div class="nav">
+		<nav class="nav1">
+			<ul>
+				<li class="navButton">SELL IN NOVELNOOK</li>
+                <li class="navButton">SUPPORT</li>
+                <li class="navButton">LOGIN</li>
+                <li class="navButton">SIGNUP</li>
+			</ul>
+			
+		</nav>
+		<nav class="nav2">
+			<img src="logo.png" class="logo">
+			<img src="logo2.png" class="logo2">
+		</nav>
+		
+		<h1 class="CoverTitle">TRENDING NOVELS!</h1>
+		
+		<!-- slideshow area -->
+		
+		<div class="slideshow_container">
+			<button class="Cart">Add to Cart></button>
+			<div class="Slide">
+			<img src="Sam.webp" style="width:45%">
+			<div class="text">'Sam' by Allegra Goodman</div>
+			</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<!-- recommending novel -->
+		
+		<h1 class="SubTitle", style="font-family: Comic Sans MS;">Recommended Novels</h1>
+	
+		<div class="row">
+		<div class="column">
+			<div class="card">
+			<img src="Age.webp" alt="Age of Vice" style="width:10%">
+			<div class="container">
+				<h2>Age of Vice</h2>
+				<p class="title">by Deepti Kapoor</p>
+				<p>This is the age of vice, where money, pleasure, and power are everything, and the family ties that bind can also kill.</p>
+				<a href="page2.html"><button class="button">Buy Now</button></a>
+			</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="column">
+			<div class="card">
+			<img src="Survivalists.webp" alt="The Survivalists" style="width:10%">
+			<div class="container">
+				<h2>The Survivalists</h2>
+				<p class="title">by Kashana Cauley</p>
+				<p>A single Black lawyer puts her career and personal moral code at risk when she moves in with her coffee entrepreneur boyfriend and his doomsday-prepping roommates in a novel 
+				that's packed with tension, curiosity, humor, and wit from a writer with serious comedy credentials.</p>
+				<p><button class="button">Buy Now</button></p>
+			</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="column">
+			<div class="card">
+			<img src="Spare.webp" alt="Spare" style="width:10%">
+			<div class="container">
+				<h2>Spare</h2>
+				<p class="title">by Prince Harry</p>
+				<p>Spare is a memoir by Prince Harry, Duke of Sussex, which was released on 10 January 2023.</p>
+				<p><button class="button">Buy Now</button></p>
+			</div>
+			</div>
+		</div>
+		</div>
+		
+	</body>
+	
+	<style>
+		<!-- navigation -->
+		
+		.nav{
+			overflow: hidden;
+			position: relative;
+			top: 0;
+			left: 0;}
+		.nav1{
+            z-index: 2;
+			width: 100%;
+            position: fixed;
+            background-color: #386150;
+			top: 0%;
+			left: 0%;}
+		.navButton{
+            padding-right: 20px;
+            font-family: Times New Roman;
+            color: #fff;
+            list-style-type: none;
+            float: right;
+            font-size: 16px;}
+		.nav2{
+			z-index: 1;
+			width: 100%;
+			height: 106px;
+			left: 0%;
+			top: 3%;
+			position: fixed;
+			background-color: #cffdbc;}
+		.logo{
+			float: left;}
+		.logo2{
+			float: right;
+			height: 100px;}
+		.CoverTitle{
+			margin-top: 200px;
+			font-family: Comic Sans MS;
+			text-align: center;}
+		<!-- attempt of slideshow-->
+		*{
+			box-sizing: border-box;}
+		.slideshow_container{
+			max-width: 1000px;
+			position: relative;
+			background-color: rgba(0,0,0,0.5);
+			margin: auto;}
+		.Slide img{
+			display: block;
+			margin: auto;}
+		.Cart{
+			font-family: Oswald;
+			background-color: black;
+			color: white;
+			font: gotham bold;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			font-size: 40px;
+			border-radius: 15px;}
+		.Cart:hover{
+			background-color: #262626}
+		.prev, .next{
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;}
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;}
+		.prev:hover, .next:hover{
+			background-color: rgba(0,0,0,0.8);}
+		.text{
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;}
+		<!-- Recommended Novels part -->
+		
+		.column{
+			float: left;
+			width: 33.3%;
+			margin-bottom: 16px;
+			padding: 0 8px;}
+		.card{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+		.title{
+			color: grey;}
+		.button{
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 8px;
+			color: white;
+			background-color: #8a6851;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;}
+		.button:hover{
+			background-color: #604839;}
+</html>
